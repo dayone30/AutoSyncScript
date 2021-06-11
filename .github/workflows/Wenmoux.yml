@@ -23,6 +23,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/Wenmoux/scripts.git"
-          source_branch: "wen"
+          source_branch: "master"
           destination_branch: "Wenmoux"
           github_token: ${{ secrets.PAT }}
