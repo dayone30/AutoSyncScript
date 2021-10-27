@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-ElsaKing-DogDog
+    types: sync-shufflewzc-faker2
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync ElsaKing-DogDog
+      - name: sync shufflewzc-faker2
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/ElsaKing/DogDog.git"
+          source_repo: "https://github.com/shufflewzc/faker2.git"
           source_branch: "main"
           destination_branch: "lxk0301"
           github_token: ${{ secrets.PAT }}
